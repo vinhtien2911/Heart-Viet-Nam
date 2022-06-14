@@ -3,7 +3,7 @@
 <html lang="vn">
 	<!--begin::Head-->
 	<head><base href="../">
-		<title>Câu hỏi thường gặp</title>
+		<title>Hoạt động</title>
 		<meta name="description" content="HEART cùng với đội y bác sĩ và chuyên gia có kinh nghiệm nhiều năm trong lĩnh vực tâm lý sẽ là người bạn cùng đồng hành với các mẹ trong quá trình vượt qua căn bệnh trầm cảm sau sinh." />
 		<meta name="keywords" content="Heart Việt Nam, Heart, Trầm cảm sau sinh, SBC2022, Social Business Creation 2022, TCSS, HeartVN" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,6 +21,7 @@
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../../assets/css/vanilla-zoom.min.css">
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -72,13 +73,13 @@
 													<span class="menu-title">Dashboard</href=></span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
-											</div>												
+											</div>
 											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span onclick ="document.location='user/bloglist.html'" class="menu-link py-3">
 													<span class="menu-title">Bài viết</href=></span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>											
-											</div>
+											</div>											
 											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
 													<span class="menu-title">Sự kiện</href=></span>
@@ -103,7 +104,7 @@
 													</div>
 												</div>
 											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
 													<span class="menu-title">Về chúng tôi</span>
 													<span class="menu-arrow d-lg-none"></span>
@@ -118,7 +119,7 @@
 														</a>
 													</div>
 													<div class="menu-item">
-														<a class="menu-link active py-3" href="user/faq.html">
+														<a class="menu-link py-3" href="user/faq.html">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
@@ -127,7 +128,7 @@
 													</div>
 												</div>
 											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
 													<span class="menu-title">Tài khoản</span>
 													<span class="menu-arrow d-lg-none"></span>
@@ -199,7 +200,7 @@
 												<!--begin::Heading-->
 												<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('../../assets/media//patterns/dropdown-header-bg.png')">
 													<!--begin::Title-->
-													<h3 class="text-white fw-bold px-9 mt-10 mb-6">Thông báo
+													<h3 class="text-white fw-bold px-9 mt-10 mb-6">Notifications
 													<span class="fs-8 opacity-75 ps-3">24 reports</span></h3>
 													<!--end::Title-->
 													<!--begin::Tabs-->
@@ -751,12 +752,12 @@
 												<!--end::Menu separator-->
 												<!--begin::Menu item-->
 												<div class="menu-item px-5">
-													<a href="user/overview.html" class="menu-link px-5">Hồ sơ</a>
+													<a href="user/overview.html" class="menu-link px-5">My Profile</a>
 												</div>
 												<!--end::Menu item-->
 												<!--begin::Menu item-->
 												<div class="menu-item px-5">
-													<a href="user/activity.html" class="menu-link px-5">Hoạt động</a>
+													<a href="user/activity.html" class="menu-link px-5">My Activities</a>
 												</div>
 												<!--end::Menu item-->
 												<!--begin::Menu separator-->
@@ -817,667 +818,1141 @@
 					<div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
 						<!--begin::Post-->
 						<div class="content flex-row-fluid" id="kt_content">
-							<!--begin::FAQ-->
-							<div class="card">
-								<!--begin::Card body-->
-								<div class="card-body p-lg-20">
-									<!--begin::Intro-->
-									<div class="mb-20">
-										<!--begin::Title-->
-										<h1 class="fs-2x text-gray-800 w-bolder mb-6">Câu hỏi thường gặp</h1>
-										<!--end::Title-->
-										<!--begin::Text-->
-										<p class="fw-bold fs-4 text-gray-600 mb-2">Heart sẽ cung cấp cho bạn một số câu hỏi thường gặp</p>
-										<!--end::Text-->
-									</div>
-									<!--end::Intro-->
-									<!--begin::Row-->
-									<div class="row mb-20">
-										<!--begin::Col-->
-										<div class="col-md-6 pe-md-10 mb-10 mb-md-0">
+							<!--begin::Layout - Activity-->
+							<div class="d-flex flex-column flex-xl-row">
+								<!--begin::Content-->
+								<div class="flex-lg-row-fluid ms-lg-10">
+									<!--begin::Timeline-->
+									<div class="card">
+										<!--begin::Card head-->
+										<div class="card-header card-header-stretch">
 											<!--begin::Title-->
-											<h1 class="text-gray-800 fw-bolder mb-4">Trầm cảm sau sinh là gì? Có phải là bệnh tâm thần?</h1>
+											<div class="card-title d-flex align-items-center">
+												<h3 class="fw-bolder m-0 text-gray-800">Bài blog</h3>
+											</div>
 											<!--end::Title-->
-											<!--begin::Accordion-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_4_1">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Về mặt sinh lý</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_4_1" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Về mặt sinh lý, trong quá trình từ khi mang thai đến khi sinh, hoocmone thay đổi khá mạnh, nếu hoocmone nữ và thể vàng sẽ tăng lên trong giai đoạn mang thai nhưng sau khi sinh sẽ giảm rất nhanh. Vì thế sự giảm xuống nhanh như vậy có thể là nguyên nhân chủ yếu tạo ra chứng trầm cảm. Ngoài ra cũng có nghiên cứu cho rằng hoocmone vỏ thượng thận và hoocmone tuyến giáp giảm đi cũng là nguyên nhân có thể gây ra chứng trầm cảm.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_4_2">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Về thể chất</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_4_2" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Những sản phụ trước kia có chứng trầm cảm sẽ mắc chứng trầm cảm sau sinh cao từ ba đến năm lần so với người bình thường. Ngoài ra sản phụ tuổi còn ít, sản phụ có tiền sử bệnh căng thẳng, lo lắng hoặc những sản phụ có tiền sử bệnh về tâm lý cũng rất dễ xuất hiện hiện tượng trầm cảm sau sinh.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_4_3">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Về mặt tâm lý xã hội</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_4_3" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Do việc chăm sóc em bé sau khi sinh khá tốn công sức, em bé ngủ nghỉ và bú sữa không theo thời gian cố định nên mẹ mệt mỏi, hay bị mất ngủ và cơ thể suy nhược. Khi sức khỏe và tinh thần bị suy nhược trong thời gian dài, sự căng thẳng, lo lắng, trầm cảm theo đó xuất hiện. Đó cũng là nguyên nhân quan trọng gây ra triệu chứng trầm cảm sau sinh.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--end::Accordion-->
+											<!--end::Toolbar-->
 										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-md-6 ps-md-10">
-											<!--begin::Title-->
-											<h1 class="text-gray-800 fw-bolder mb-4">Triệu chứng của trầm cảm sau sinh?</h1>
-											<!--end::Title-->
-											<!--begin::Accordion-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_5_2">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
+										<!--end::Card head-->
+										<!--begin::Card body-->
+										<div class="card-body">
+											<!--begin::Tab Content-->
+											<div class="tab-content">
+												<!--begin::Tab panel-->
+												<div id="kt_activity_today" class="card-body p-0 tab-pane fade show active" role="tabpanel" aria-labelledby="kt_activity_today_tab">
+													<!--begin::Timeline-->
+													<main class="page blog-post-list">
+														<section class="clean-block clean-blog-list dark">
+															<div class="container">
+																<div class="block-content">
+																	<div class="clean-blog-post" style="margin-bottom: 20px;">
+																		<div class="row">
+																			<div class="col-lg-5"><img class="rounded img-fluid" src="../../assets/blog/img/tech/image4.jpg"></div>
+																			<div class="col-lg-7">
+																				<h3 style="font-size: 25px;">Lorem Ipsum dolor sit amet</h3>
+																				<div class="info"><span class="text-muted" style="font-size: 15px;">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
+																				<p style="font-size: 15px; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+																				<button class="btn btn-outline-primary btn-sm" type="button" style="font-size: 15px;">Read More</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="clean-blog-post" style="margin-bottom: 20px;">
+																		<div class="row">
+																			<div class="col-lg-5"><img class="rounded img-fluid" src="../../assets/blog/img/tech/image4.jpg"></div>
+																			<div class="col-lg-7">
+																				<h3 style="font-size: 25px;">Lorem Ipsum dolor sit amet</h3>
+																				<div class="info"><span class="text-muted" style="font-size: 15px;">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
+																				<p style="font-size: 15px; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+																				<button class="btn btn-outline-primary btn-sm" type="button" style="font-size: 15px;">Read More</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="clean-blog-post" style="margin-bottom: 20px;">
+																		<div class="row">
+																			<div class="col-lg-5"><img class="rounded img-fluid" src="../../assets/blog/img/tech/image4.jpg"></div>
+																			<div class="col-lg-7">
+																				<h3 style="font-size: 25px;">Lorem Ipsum dolor sit amet</h3>
+																				<div class="info"><span class="text-muted" style="font-size: 15px;">Jan 16, 2018 by&nbsp;<a href="#">John Smith</a></span></div>
+																				<p style="font-size: 15px; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+																				<button class="btn btn-outline-primary btn-sm" type="button" style="font-size: 15px;">Read More</button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</section>
+													</main>													
+													<!--end::Timeline-->
+												</div>
+												<!--end::Tab panel-->
+												<!--begin::Tab panel-->
+												<div id="kt_activity_week" class="card-body p-0 tab-pane fade show" role="tabpanel" aria-labelledby="kt_activity_week_tab">
+													<!--begin::Timeline-->
+													<div class="timeline">
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/communication/com009.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M5.78001 21.115L3.28001 21.949C3.10897 22.0059 2.92548 22.0141 2.75004 21.9727C2.57461 21.9312 2.41416 21.8418 2.28669 21.7144C2.15923 21.5869 2.06975 21.4264 2.0283 21.251C1.98685 21.0755 1.99507 20.892 2.05201 20.7209L2.886 18.2209L7.22801 13.879L10.128 16.774L5.78001 21.115Z" fill="black" />
+																			<path d="M21.7 8.08899L15.911 2.30005C15.8161 2.2049 15.7033 2.12939 15.5792 2.07788C15.455 2.02637 15.3219 1.99988 15.1875 1.99988C15.0531 1.99988 14.92 2.02637 14.7958 2.07788C14.6717 2.12939 14.5589 2.2049 14.464 2.30005L13.74 3.02295C13.548 3.21498 13.4402 3.4754 13.4402 3.74695C13.4402 4.01849 13.548 4.27892 13.74 4.47095L14.464 5.19397L11.303 8.35498C10.1615 7.80702 8.87825 7.62639 7.62985 7.83789C6.38145 8.04939 5.2293 8.64265 4.332 9.53601C4.14026 9.72817 4.03256 9.98855 4.03256 10.26C4.03256 10.5315 4.14026 10.7918 4.332 10.984L13.016 19.667C13.208 19.859 13.4684 19.9668 13.74 19.9668C14.0115 19.9668 14.272 19.859 14.464 19.667C15.3575 18.77 15.9509 17.618 16.1624 16.3698C16.374 15.1215 16.1932 13.8383 15.645 12.697L18.806 9.53601L19.529 10.26C19.721 10.452 19.9814 10.5598 20.253 10.5598C20.5245 10.5598 20.785 10.452 20.977 10.26L21.7 9.53601C21.7952 9.44108 21.8706 9.32825 21.9221 9.2041C21.9737 9.07995 22.0002 8.94691 22.0002 8.8125C22.0002 8.67809 21.9737 8.54505 21.9221 8.4209C21.8706 8.29675 21.7952 8.18392 21.7 8.08899Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n2">
+																<!--begin::Timeline heading-->
+																<div class="overflow-auto pe-3">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">Invitation for crafting engaging designs that speak human workshop</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Sent at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
+																			<img src="../../assets/media/avatars/150-2.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z" fill="black" />
+																			<path opacity="0.3" d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="mb-5 pe-3">
+																	<!--begin::Title-->
+																	<a href="#" class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2">3 New Incoming Project Files:</a>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Sent at 10:30 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
+																			<img src="../../assets/media/avatars/150-6.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/pdf.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance KPI App Guidelines</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">1.9mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--begin::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/doc.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Client UAT Testing Results</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">18kb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/css.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance Reports</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">20mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Icon-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
+																			<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">Task
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>merged with
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>in “Ads Pro Admin Dashboard project:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Initiated at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+																			<img src="../../assets/media/avatars/150-11.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black" />
+																			<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">3 new application design concepts added:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Created at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
+																			<img src="../../assets/media/avatars/150-3.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/1.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/2.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/3.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/communication/com010.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6 8.725C6 8.125 6.4 7.725 7 7.725H14L18 11.725V12.925L22 9.725L12.6 2.225C12.2 1.925 11.7 1.925 11.4 2.225L2 9.725L6 12.925V8.725Z" fill="black" />
+																			<path opacity="0.3" d="M22 9.72498V20.725C22 21.325 21.6 21.725 21 21.725H3C2.4 21.725 2 21.325 2 20.725V9.72498L11.4 17.225C11.8 17.525 12.3 17.525 12.6 17.225L22 9.72498ZM15 11.725H18L14 7.72498V10.725C14 11.325 14.4 11.725 15 11.725Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">New case
+																	<a href="#" class="text-primary fw-bolder me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="overflow-auto pb-5">
+																		<!--begin::Wrapper-->
+																		<div class="d-flex align-items-center mt-1 fs-6">
+																			<!--begin::Info-->
+																			<div class="text-muted me-2 fs-7">Added at 4:23 PM by</div>
+																			<!--end::Info-->
+																			<!--begin::User-->
+																			<a href="#" class="text-primary fw-bolder me-1">Alice Tan</a>
+																			<!--end::User-->
+																		</div>
+																		<!--end::Wrapper-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
 													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Triệu chứng thường gặp</h4>
-													<!--end::Title-->
+													<!--end::Timeline-->
 												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_5_2" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Xuất hiện sau khi sinh 1 tuần là tâm trạng không vui, dễ kích động, dễ cáu gắt, buồn tủi, khóc vô cớ, thậm chí có trường hợp thay đổi tâm lý quá lớn, sẽ dẫn đến cảm giác lo lắng sợ sệt. Nếu được quan tâm kịp thời, chứng trầm cảm thường mất đi sau 1 tuần.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_5_3">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
+												<!--end::Tab panel-->
+												<!--begin::Tab panel-->
+												<div id="kt_activity_month" class="card-body p-0 tab-pane fade show" role="tabpanel" aria-labelledby="kt_activity_month_tab">
+													<!--begin::Timeline-->
+													<div class="timeline">
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black" />
+																			<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">3 new application design concepts added:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Created at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
+																			<img src="../../assets/media/avatars/150-3.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/1.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/2.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/3.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/communication/com010.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6 8.725C6 8.125 6.4 7.725 7 7.725H14L18 11.725V12.925L22 9.725L12.6 2.225C12.2 1.925 11.7 1.925 11.4 2.225L2 9.725L6 12.925V8.725Z" fill="black" />
+																			<path opacity="0.3" d="M22 9.72498V20.725C22 21.325 21.6 21.725 21 21.725H3C2.4 21.725 2 21.325 2 20.725V9.72498L11.4 17.225C11.8 17.525 12.3 17.525 12.6 17.225L22 9.72498ZM15 11.725H18L14 7.72498V10.725C14 11.325 14.4 11.725 15 11.725Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">New case
+																	<a href="#" class="text-primary fw-bolder me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="overflow-auto pb-5">
+																		<!--begin::Wrapper-->
+																		<div class="d-flex align-items-center mt-1 fs-6">
+																			<!--begin::Info-->
+																			<div class="text-muted me-2 fs-7">Added at 4:23 PM by</div>
+																			<!--end::Info-->
+																			<!--begin::User-->
+																			<a href="#" class="text-primary fw-bolder me-1">Alice Tan</a>
+																			<!--end::User-->
+																		</div>
+																		<!--end::Wrapper-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm002.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M21 10H13V11C13 11.6 12.6 12 12 12C11.4 12 11 11.6 11 11V10H3C2.4 10 2 10.4 2 11V13H22V11C22 10.4 21.6 10 21 10Z" fill="black" />
+																			<path opacity="0.3" d="M12 12C11.4 12 11 11.6 11 11V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V11C13 11.6 12.6 12 12 12Z" fill="black" />
+																			<path opacity="0.3" d="M18.1 21H5.9C5.4 21 4.9 20.6 4.8 20.1L3 13H21L19.2 20.1C19.1 20.6 18.6 21 18.1 21ZM13 18V15C13 14.4 12.6 14 12 14C11.4 14 11 14.4 11 15V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18ZM17 18V15C17 14.4 16.6 14 16 14C15.4 14 15 14.4 15 15V18C15 18.6 15.4 19 16 19C16.6 19 17 18.6 17 18ZM9 18V15C9 14.4 8.6 14 8 14C7.4 14 7 14.4 7 15V18C7 18.6 7.4 19 8 19C8.6 19 9 18.6 9 18Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">New order
+																	<a href="#" class="text-primary fw-bolder me-1">#67890</a>is placed for Workshow Planning &amp; Budget Estimation</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Placed at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<a href="#" class="text-primary fw-bolder me-1">Jimmy Bold</a>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/communication/com009.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M5.78001 21.115L3.28001 21.949C3.10897 22.0059 2.92548 22.0141 2.75004 21.9727C2.57461 21.9312 2.41416 21.8418 2.28669 21.7144C2.15923 21.5869 2.06975 21.4264 2.0283 21.251C1.98685 21.0755 1.99507 20.892 2.05201 20.7209L2.886 18.2209L7.22801 13.879L10.128 16.774L5.78001 21.115Z" fill="black" />
+																			<path d="M21.7 8.08899L15.911 2.30005C15.8161 2.2049 15.7033 2.12939 15.5792 2.07788C15.455 2.02637 15.3219 1.99988 15.1875 1.99988C15.0531 1.99988 14.92 2.02637 14.7958 2.07788C14.6717 2.12939 14.5589 2.2049 14.464 2.30005L13.74 3.02295C13.548 3.21498 13.4402 3.4754 13.4402 3.74695C13.4402 4.01849 13.548 4.27892 13.74 4.47095L14.464 5.19397L11.303 8.35498C10.1615 7.80702 8.87825 7.62639 7.62985 7.83789C6.38145 8.04939 5.2293 8.64265 4.332 9.53601C4.14026 9.72817 4.03256 9.98855 4.03256 10.26C4.03256 10.5315 4.14026 10.7918 4.332 10.984L13.016 19.667C13.208 19.859 13.4684 19.9668 13.74 19.9668C14.0115 19.9668 14.272 19.859 14.464 19.667C15.3575 18.77 15.9509 17.618 16.1624 16.3698C16.374 15.1215 16.1932 13.8383 15.645 12.697L18.806 9.53601L19.529 10.26C19.721 10.452 19.9814 10.5598 20.253 10.5598C20.5245 10.5598 20.785 10.452 20.977 10.26L21.7 9.53601C21.7952 9.44108 21.8706 9.32825 21.9221 9.2041C21.9737 9.07995 22.0002 8.94691 22.0002 8.8125C22.0002 8.67809 21.9737 8.54505 21.9221 8.4209C21.8706 8.29675 21.7952 8.18392 21.7 8.08899Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n2">
+																<!--begin::Timeline heading-->
+																<div class="overflow-auto pe-3">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">Invitation for crafting engaging designs that speak human workshop</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Sent at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
+																			<img src="../../assets/media/avatars/150-2.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z" fill="black" />
+																			<path opacity="0.3" d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="mb-5 pe-3">
+																	<!--begin::Title-->
+																	<a href="#" class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2">3 New Incoming Project Files:</a>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Sent at 10:30 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
+																			<img src="../../assets/media/avatars/150-6.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/pdf.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance KPI App Guidelines</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">1.9mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--begin::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/doc.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Client UAT Testing Results</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">18kb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/css.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance Reports</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">20mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Icon-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
+																			<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">Task
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>merged with
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>in “Ads Pro Admin Dashboard project:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Initiated at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+																			<img src="../../assets/media/avatars/150-11.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
 													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">“Trầm cảm sau sinh” xuất hiện muộn hơn</h4>
-													<!--end::Title-->
+													<!--end::Timeline-->
 												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_5_3" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Ngoài những triệu chứng như hụt hẫng tâm lý, còn có các triệu chứng như thể trạng yếu, uể oải không muốn làm gì, nhu cầu ăn giảm, mất ngủ… Những điều này cần được gia đình sản phụ chú ý. Những triệu chứng này sẽ xuất hiện cả ngày, nếu không có trị liệu thích hợp có thể sẽ kéo dài từ sáu đến chín tháng.</div>
-													<!--end::Text-->
+												<!--end::Tab panel-->
+												<!--begin::Tab panel-->
+												<div id="kt_activity_year" class="card-body p-0 tab-pane fade show" role="tabpanel" aria-labelledby="kt_activity_year_tab">
+													<!--begin::Timeline-->
+													<div class="timeline">
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z" fill="black" />
+																			<path opacity="0.3" d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="mb-5 pe-3">
+																	<!--begin::Title-->
+																	<a href="#" class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2">3 New Incoming Project Files:</a>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Sent at 10:30 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
+																			<img src="../../assets/media/avatars/150-6.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/pdf.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance KPI App Guidelines</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">1.9mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--begin::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/doc.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Client UAT Testing Results</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">18kb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Info-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="d-flex flex-aligns-center">
+																			<!--begin::Icon-->
+																			<img alt="" class="w-30px me-3" src="../../assets/media/svg/files/css.svg" />
+																			<!--end::Icon-->
+																			<!--begin::Info-->
+																			<div class="ms-1 fw-bold">
+																				<!--begin::Desc-->
+																				<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance Reports</a>
+																				<!--end::Desc-->
+																				<!--begin::Number-->
+																				<div class="text-gray-400">20mb</div>
+																				<!--end::Number-->
+																			</div>
+																			<!--end::Icon-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
+																			<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">Task
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>merged with
+																	<a href="#" class="text-primary fw-bolder me-1">#45890</a>in “Ads Pro Admin Dashboard project:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Initiated at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+																			<img src="../../assets/media/avatars/150-11.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black" />
+																			<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">3 new application design concepts added:</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Created at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
+																			<img src="../../assets/media/avatars/150-3.jpg" alt="img" />
+																		</div>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+																<!--begin::Timeline details-->
+																<div class="overflow-auto pb-5">
+																	<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/1.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay me-10">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/2.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																		<!--begin::Item-->
+																		<div class="overlay">
+																			<!--begin::Image-->
+																			<div class="overlay-wrapper">
+																				<img alt="img" class="rounded w-100px" src="../../assets/media/stock/300x270/3.jpg" />
+																			</div>
+																			<!--end::Image-->
+																			<!--begin::Link-->
+																			<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+																				<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+																			</div>
+																			<!--end::Link-->
+																		</div>
+																		<!--end::Item-->
+																	</div>
+																</div>
+																<!--end::Timeline details-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/communication/com010.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6 8.725C6 8.125 6.4 7.725 7 7.725H14L18 11.725V12.925L22 9.725L12.6 2.225C12.2 1.925 11.7 1.925 11.4 2.225L2 9.725L6 12.925V8.725Z" fill="black" />
+																			<path opacity="0.3" d="M22 9.72498V20.725C22 21.325 21.6 21.725 21 21.725H3C2.4 21.725 2 21.325 2 20.725V9.72498L11.4 17.225C11.8 17.525 12.3 17.525 12.6 17.225L22 9.72498ZM15 11.725H18L14 7.72498V10.725C14 11.325 14.4 11.725 15 11.725Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mb-10 mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">New case
+																	<a href="#" class="text-primary fw-bolder me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="overflow-auto pb-5">
+																		<!--begin::Wrapper-->
+																		<div class="d-flex align-items-center mt-1 fs-6">
+																			<!--begin::Info-->
+																			<div class="text-muted me-2 fs-7">Added at 4:23 PM by</div>
+																			<!--end::Info-->
+																			<!--begin::User-->
+																			<a href="#" class="text-primary fw-bolder me-1">Alice Tan</a>
+																			<!--end::User-->
+																		</div>
+																		<!--end::Wrapper-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+														<!--begin::Timeline item-->
+														<div class="timeline-item">
+															<!--begin::Timeline line-->
+															<div class="timeline-line w-40px"></div>
+															<!--end::Timeline line-->
+															<!--begin::Timeline icon-->
+															<div class="timeline-icon symbol symbol-circle symbol-40px">
+																<div class="symbol-label bg-light">
+																	<!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm002.svg-->
+																	<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M21 10H13V11C13 11.6 12.6 12 12 12C11.4 12 11 11.6 11 11V10H3C2.4 10 2 10.4 2 11V13H22V11C22 10.4 21.6 10 21 10Z" fill="black" />
+																			<path opacity="0.3" d="M12 12C11.4 12 11 11.6 11 11V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V11C13 11.6 12.6 12 12 12Z" fill="black" />
+																			<path opacity="0.3" d="M18.1 21H5.9C5.4 21 4.9 20.6 4.8 20.1L3 13H21L19.2 20.1C19.1 20.6 18.6 21 18.1 21ZM13 18V15C13 14.4 12.6 14 12 14C11.4 14 11 14.4 11 15V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18ZM17 18V15C17 14.4 16.6 14 16 14C15.4 14 15 14.4 15 15V18C15 18.6 15.4 19 16 19C16.6 19 17 18.6 17 18ZM9 18V15C9 14.4 8.6 14 8 14C7.4 14 7 14.4 7 15V18C7 18.6 7.4 19 8 19C8.6 19 9 18.6 9 18Z" fill="black" />
+																		</svg>
+																	</span>
+																	<!--end::Svg Icon-->
+																</div>
+															</div>
+															<!--end::Timeline icon-->
+															<!--begin::Timeline content-->
+															<div class="timeline-content mt-n1">
+																<!--begin::Timeline heading-->
+																<div class="pe-3 mb-5">
+																	<!--begin::Title-->
+																	<div class="fs-5 fw-bold mb-2">New order
+																	<a href="#" class="text-primary fw-bolder me-1">#67890</a>is placed for Workshow Planning &amp; Budget Estimation</div>
+																	<!--end::Title-->
+																	<!--begin::Description-->
+																	<div class="d-flex align-items-center mt-1 fs-6">
+																		<!--begin::Info-->
+																		<div class="text-muted me-2 fs-7">Placed at 4:23 PM by</div>
+																		<!--end::Info-->
+																		<!--begin::User-->
+																		<a href="#" class="text-primary fw-bolder me-1">Jimmy Bold</a>
+																		<!--end::User-->
+																	</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Timeline heading-->
+															</div>
+															<!--end::Timeline content-->
+														</div>
+														<!--end::Timeline item-->
+													</div>
+													<!--end::Timeline-->
 												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
+												<!--end::Tab panel-->
 											</div>
-											<!--end::Section-->
-											<!--end::Accordion-->
+											<!--end::Tab Content-->
 										</div>
-										<!--end::Col-->
+										<!--end::Card body-->
 									</div>
-									<!--end::Row-->
-									<!--begin::Row-->
-									<div class="row mb-20">
-										<!--begin::Col-->
-										<div class="col-md-6 pe-md-10 mb-10 mb-md-0">
-											<!--begin::Title-->
-											<h1 class="text-gray-800 w-bolder mb-4">Phương pháp nào hiệu quả, an toàn?</h1>
-											<!--end::Title-->
-											<!--begin::Accordion-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_6_2">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Ý kiến của chuyên gia</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_6_2" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Các chuyên gia chăm sóc sức khỏe có những ý kiến khác nhau về phương pháp trị liệu bằng thuốc điều trị. Đa số các chuyên gia ủng hộ phương pháp điều trị không dùng thuốc đối với nhiều bệnh sức khỏe tâm thần. Mỗi cá nhân sẽ có một phương pháp phù hợp để đảm bảo liệu trình với sự giám sát và hỗ trợ của chuyên gia.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--end::Accordion-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-md-6 ps-md-10">
-											<!--begin::Title-->
-											<h1 class="text-gray-800 fw-bolder mb-4">Tiến Percy</h1>
-											<!--end::Title-->
-											<!--begin::Accordion-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_7_1">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Tiến Percy là ai ?</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_7_1" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Tiến Percy là người làm ra trang web này.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_7_2">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Sở thích của Tiến Percy là gì ?</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_7_2" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Ăn, ngủ, chơi game.</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_7_3">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Tiến Percy học ngành gì ?</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_7_3" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Học viện hàng không - bên hông chợ lớn</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-												<!--begin::Separator-->
-												<div class="separator separator-dashed"></div>
-												<!--end::Separator-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Section-->
-											<div class="m-0">
-												<!--begin::Heading-->
-												<div class="d-flex align-items-center collapsible py-3 toggle collapsed mb-0" data-bs-toggle="collapse" data-bs-target="#kt_job_7_4">
-													<!--begin::Icon-->
-													<div class="btn btn-sm btn-icon mw-20px btn-active-color-primary me-5">
-														<!--begin::Svg Icon | path: icons/duotune/general/gen036.svg-->
-														<span class="svg-icon toggle-on svg-icon-primary svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="6.0104" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-														<!--begin::Svg Icon | path: icons/duotune/general/gen035.svg-->
-														<span class="svg-icon toggle-off svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="5" fill="black" />
-																<rect x="10.8891" y="17.8033" width="12" height="2" rx="1" transform="rotate(-90 10.8891 17.8033)" fill="black" />
-																<rect x="6.01041" y="10.9247" width="12" height="2" rx="1" fill="black" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Icon-->
-													<!--begin::Title-->
-													<h4 class="text-gray-700 fw-bolder cursor-pointer mb-0">Tiến Percy có bồ chưa ?</h4>
-													<!--end::Title-->
-												</div>
-												<!--end::Heading-->
-												<!--begin::Body-->
-												<div id="kt_job_7_4" class="collapse fs-6 ms-1">
-													<!--begin::Text-->
-													<div class="mb-4 text-gray-600 fw-bold fs-6 ps-10">Tiến Percy đang được rao bán với giá 0 đồng. Điều kiện cho ăn ngày 3 bữa, dẫn đi mua sắm, tà tưa ...</div>
-													<!--end::Text-->
-												</div>
-												<!--end::Content-->
-											</div>
-											<!--end::Section-->
-											<!--end::Accordion-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-									<!--begin::Section-->
-									<div class="mb-16">
-										<!--begin::Top-->
-										<div class="text-center mb-12">
-											<!--begin::Title-->
-											<h3 class="fs-2hx text-dark mb-5">Publications</h3>
-											<!--end::Title-->
-											<!--begin::Text-->
-											<div class="fs-5 text-muted fw-bold">Our goal is to provide a complete and robust theme solution
-											<br />to boost all of our customer’s project deployments</div>
-											<!--end::Text-->
-										</div>
-										<!--end::Top-->
-										<!--begin::Row-->
-										<div class="row g-10">
-											<!--begin::Col-->
-											<div class="col-md-4">
-												<!--begin::Publications post-->
-												<div class="card-xl-stretch me-md-6">
-													<!--begin::Overlay-->
-													<a class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" href="../../assets/media/stock/600x400/img-73.jpg">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('../../assets/media/stock/600x400/img-73.jpg')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer bg-dark card-rounded bg-opacity-25">
-															<i class="bi bi-eye-fill fs-2x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Overlay-->
-													<!--begin::Body-->
-													<div class="m-0">
-														<!--begin::Title-->
-														<a href="#" class="fs-4 text-dark fw-bolder text-hover-primary text-dark lh-base">Bootstrap Admin - How To Started the Dashboard Tutorial</a>
-														<!--end::Title-->
-														<!--begin::Text-->
-														<div class="fw-bold fs-5 text-gray-600 text-dark mt-3 mb-5">We’ve been focused on making a the from also not been afraid to and step away been focused create eye</div>
-														<!--end::Text-->
-														<!--begin::Content-->
-														<div class="fs-6 fw-bolder">
-															<!--begin::Author-->
-															<a href="user/overview.html" class="text-gray-700 text-hover-primary">Jane Miller</a>
-															<!--end::Author-->
-															<!--begin::Date-->
-															<span class="text-muted">on Mar 21 2021</span>
-															<!--end::Date-->
-														</div>
-														<!--end::Content-->
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Publications post-->
-											</div>
-											<!--end::Col-->
-											<!--begin::Col-->
-											<div class="col-md-4">
-												<!--begin::Publications post-->
-												<div class="card-xl-stretch mx-md-3">
-													<!--begin::Overlay-->
-													<a class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" href="../../assets/media/stock/600x400/img-74.jpg">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('../../assets/media/stock/600x400/img-74.jpg')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer bg-dark card-rounded bg-opacity-25">
-															<i class="bi bi-eye-fill fs-2x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Overlay-->
-													<!--begin::Body-->
-													<div class="m-0">
-														<!--begin::Title-->
-														<a href="#" class="fs-4 text-dark fw-bolder text-hover-primary text-dark lh-base">Bootstrap Admin - How To Started the Dashboard Tutorial</a>
-														<!--end::Title-->
-														<!--begin::Text-->
-														<div class="fw-bold fs-5 text-gray-600 text-dark mt-3 mb-5">We’ve been focused on making the from v4 to v5 but we have also not been afraid to step away been focused</div>
-														<!--end::Text-->
-														<!--begin::Content-->
-														<div class="fs-6 fw-bolder">
-															<!--begin::Author-->
-															<a href="user/overview.html" class="text-gray-700 text-hover-primary">Cris Morgan</a>
-															<!--end::Author-->
-															<!--begin::Date-->
-															<span class="text-muted">on Apr 14 2021</span>
-															<!--end::Date-->
-														</div>
-														<!--end::Content-->
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Publications post-->
-											</div>
-											<!--end::Col-->
-											<!--begin::Col-->
-											<div class="col-md-4">
-												<!--begin::Publications post-->
-												<div class="card-xl-stretch ms-md-6">
-													<!--begin::Overlay-->
-													<a class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales" href="../../assets/media/stock/600x400/img-47.jpg">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px" style="background-image:url('../../assets/media/stock/600x400/img-47.jpg')"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer bg-dark card-rounded bg-opacity-25">
-															<i class="bi bi-eye-fill fs-2x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Overlay-->
-													<!--begin::Body-->
-													<div class="m-0">
-														<!--begin::Title-->
-														<a href="#" class="fs-4 text-dark fw-bolder text-hover-primary text-dark lh-base">Bootstrap Admin - How To Started the Dashboard Tutorial</a>
-														<!--end::Title-->
-														<!--begin::Text-->
-														<div class="fw-bold fs-5 text-gray-600 text-dark mt-3 mb-5">We’ve been focused on making the from v4 to v5 but we’ve also not been afraid to step away been focused</div>
-														<!--end::Text-->
-														<!--begin::Content-->
-														<div class="fs-6 fw-bolder">
-															<!--begin::Author-->
-															<a href="user/overview.html" class="text-gray-700 text-hover-primary">Carles Nilson</a>
-															<!--end::Author-->
-															<!--begin::Date-->
-															<span class="text-muted">on May 14 2021</span>
-															<!--end::Date-->
-														</div>
-														<!--end::Content-->
-													</div>
-													<!--end::Body-->
-												</div>
-												<!--end::Publications post-->
-											</div>
-											<!--end::Col-->
-										</div>
-										<!--end::Row-->
-									</div>
-									<!--end::Section-->
-									<!--begin::Card-->
-									<div class="card bg-light text-center">
-										<!--begin::Body-->
-										<div class="card-body py-12">
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/facebook-4.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/instagram-2-1.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/github.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/behance.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/pinterest-p.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/twitter.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="#" class="mx-4">
-												<img src="../../assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end::Card-->
+									<!--end::Timeline-->
 								</div>
-								<!--end::Card body-->
+								<!--end::Content-->
 							</div>
-							<!--end::FAQ-->
+							<!--end::Layout - Activity-->
 						</div>
 						<!--end::Post-->
 					</div>
@@ -2257,7 +2732,7 @@
 										<!--end::Avatar-->
 										<!--begin::Details-->
 										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Max Smith</a>
+											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Tiến Percy</a>
 											<div class="fw-bold text-muted">max@kt.com</div>
 										</div>
 										<!--end::Details-->
@@ -2644,13 +3119,13 @@
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="../../assets/media/avatars/150-15.jpg" />
+											<img alt="Pic" src="../../assets/media/avatars/150-1.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->
 										<div class="ms-5">
-											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Brian Cox</a>
-											<div class="fw-bold text-muted">brian@exchange.com</div>
+											<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Emma Smith</a>
+											<div class="fw-bold text-muted">e.smith@kpmg.com.au</div>
 										</div>
 										<!--end::Details-->
 									</div>
@@ -3590,10 +4065,8 @@
 		<script src="../../assets/plugins/global/plugins.bundle.js"></script>
 		<script src="../../assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="../../assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
-		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
+		<script src="../../assets/js/custom/account/profile/activity.js"></script>
 		<script src="../../assets/js/custom/widgets.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
