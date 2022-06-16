@@ -3,7 +3,7 @@
 <html lang="vn">
 	<!--begin::Head-->
 	<head><base href="../">
-		<title>Chỉnh sửa hồ sơ nhân viên</title>
+		<title>Thông tin chi tiết</title>
 		<meta name="description" content="HEART cùng với đội y bác sĩ và chuyên gia có kinh nghiệm nhiều năm trong lĩnh vực tâm lý sẽ là người bạn cùng đồng hành với các mẹ trong quá trình vượt qua căn bệnh trầm cảm sau sinh." />
 		<meta name="keywords" content="Heart Việt Nam, Heart, Trầm cảm sau sinh, SBC2022, Social Business Creation 2022, TCSS, HeartVN" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -849,16 +849,6 @@
 								<div class="flex-lg-row-fluid ms-lg-10">
 									<!--begin::Timeline-->
 									<div class="card">
-										<!--begin::Card head-->
-										<div class="card-header card-header-stretch">
-											<!--begin::Title-->
-											<div class="card-title d-flex align-items-center">
-												<h3 class="fw-bolder m-0 text-gray-800">Chỉnh sửa hồ sơ nhân viên</h3>
-											</div>
-											<!--end::Title-->
-											<!--end::Toolbar-->
-										</div>
-										<!--end::Card head-->
 										<!--begin::Card body-->
 										<div class="card-body">
 											<!--begin::Tab Content-->
@@ -868,65 +858,56 @@
 													<!--begin::Timeline-->
 													<div class="container">
                                                         <div class="row justify-content-center">
+															<div class="row mt-5 align-items-center">
+																<div class="col-md-3 text-center mb-5">
+																	<div class="avatar avatar-xl">
+																		<img src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/285995619_3144543435804941_4881483888269351775_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZxE5U2jjQisAX_PNmK5&_nc_ht=scontent.fsgn4-1.fna&oh=00_AT8T7Iy3vDK5ad3WzsqhFMRs4BX8AGSCoKj4jQ9S6qGUsQ&oe=62AF882E" alt="..." class="avatar-img rounded-circle" />
+																	</div>
+																</div>
+																<div class="col">
+																	<div class="row align-items-center">
+																		<div class="col-md-7">
+																			<h4 class="mb-1" style="font-size: 30px;">Tiến Percy</h4>
+																		</div>
+																	</div>
+																	<div class="row mb-4">
+																		<div class="col-md-7">
+																			<p class="text-muted" style="font-size: 15px;">
+																				Staff
+																			</p>
+																		</div>
+																		<div class="col">
+																			<p class="small mb-0 text-muted" style="font-size: 15px;">tientv@heart.org</p>
+																			<p class="small mb-0 text-muted" style="font-size: 15px;">Số 20 Cộng Hoà, phường 12, quận Tân Bình</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<hr class="my-4" />
 															<form>
 																<div class="form-group">
 																	<label for="name" style="font-size: 18px;">Họ Và Tên</label>
-																	<input type="text" id="name" class="form-control" placeholder="Trần Vĩnh Tiến"/>    
+																	<output type="text" id="name" class="form-control">Trần Vĩnh Tiến</output> 
 																</div>
 																<div class="form-row">
 																	<div class="form-group col-md-2">
 																		<label for="inputGender" style="font-size: 18px;">Giới tính</label>
-																		<select id="inputGender" class="form-control">
-																			<option selected="">Nam</option>
-																			<option>Nữ</option>
-																		</select>
+																		<output type="text" id="inputGender" class="form-control">Nam</output>
+																	</div>
+																	<div class="form-group col-md-4">
+																		<label for="inputLanguage" style="font-size: 18px;">Năm sinh</label>
+																		<output type="text" class="form-control" id="inputLanguage">2001</output>
 																	</div>
 																	<div class="form-group col-md-6">
 																		<label for="inputPhoneNumber" style="font-size: 18px;">Số điện thoại</label>
-																		<input type="text" class="form-control" id="inputPhoneNumber" placeholder="0326322729"/>
-																	</div>
-																	<div class="form-group col-md-4">
-																		<label for="inputLanguage" style="font-size: 18px;">Ngôn Ngữ</label>
-																		<input type="text" class="form-control" id="inputLanguage" placeholder="Tiếng Việt, Tiếng Anh"/>
+																		<output type="text" class="form-control" id="inputPhoneNumber">0326322729</output> 
 																	</div>
 																</div>
 																<div class="form-group">
 																	<label for="inputEmail" style="font-size: 18px;">Email</label>
-																	<input type="email" class="form-control" id="inputEmail" placeholder="tientv@heart.org"/>
+																	<output type="email" class="form-control" id="inputEmail">tientv@heart.org</output>
 																</div>
-																<div class="form-group">
-																	<label for="inputImage" style="font-size: 18px;">Image</label>
-																	<output type="text" class="form-control" id="inputImage">avt.png</output> 
-																	<button class="btn btn-primary" type="button" style="margin-top: 10px;">Upload new image</button>
-																</div>
-																<hr class="my-4" />
-																<div class="row mb-4">
-																	<div class="col-md-6">
-																		<div class="form-group">
-																			<label for="inputPassword" style="font-size: 18px;">Tài khoản</label>
-																			<output type="password" class="form-control" id="inputNewPassword">tientv@heart.org</output> 
-																		</div>
-																		<div class="form-group">
-																			<label for="inputPassword5" style="font-size: 18px;">New Password</label>
-																			<input type="password" class="form-control" id="inputNewPassword" placeholder="Mật khẩu mới"/>
-																		</div>
-																		<div class="form-group">
-																			<label for="inputPassword6" style="font-size: 18px;">Confirm Password</label>
-																			<input type="password" class="form-control" id="inputNewPassword" placeholder="Xác nhận mật khẩu"/>
-																		</div>
-																	</div>
-																	<div class="col-md-6" style="font-size: 18px;">
-																		<p class="mb-2">Password requirements</p>
-																		<p class="small text-muted mb-2">To create a new password, you have to meet all of the following requirements:</p>
-																		<ul class="small text-muted pl-4 mb-0">
-																			<li>Minimum 8 character</li>
-																			<li>At least one special character</li>
-																			<li>At least one number</li>
-																			<li>Can’t be the same as a previous password</li>
-																		</ul>
-																	</div>
-																</div>
-																<button type="submit" class="btn btn-success">Save Change</button>
+																<button onclick="document.location=''" type="submit" class="btn btn-primary">Trở lại</button>
 															</form>
                                                         </div>                                                        
                                                     </div>
