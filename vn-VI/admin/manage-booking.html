@@ -3,7 +3,7 @@
 <html lang="vn">
 	<!--begin::Head-->
 	<head><base href="../">
-		<title>Quản lý sự kiện</title>
+		<title>Quản lý đặt lịch</title>
 		<meta name="description" content="HEART cùng với đội y bác sĩ và chuyên gia có kinh nghiệm nhiều năm trong lĩnh vực tâm lý sẽ là người bạn cùng đồng hành với các mẹ trong quá trình vượt qua căn bệnh trầm cảm sau sinh." />
 		<meta name="keywords" content="Heart Việt Nam, Heart, Trầm cảm sau sinh, SBC2022, Social Business Creation 2022, TCSS, HeartVN" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href=../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 	</head>
@@ -849,18 +849,22 @@
 										      	<thead>
 										        <tr>  
 											        <th>ID</th>
-													<th class="max-width">Tên bài viết</th>
-													<th>Người đăng</th>
-													<th>Ngày đăng</th>
+													<th style="width:250px;">Tên bệnh nhân</th>
+													<th style="width:250px;">Tên bác sĩ</th>
+													<th>Ngày hẹn</th>
+													<th>Giờ hẹn</th>
+													<th style="max-width:200px;">Ghi chú</th>
 													<th class="text-center">Actions</th>
 										        </tr>
-										    	</thead>
-										    	<tbody>
+										      	</thead>
+										      	<tbody>
 													<tr>
-													<td class="text-nowrap align-middle">ev220002</td>
-													<td class="text-nowrap align-middle"><a href="admin/eventdetail.html">Hậu quả trầm cảm sau sinh phần 2</a></td>
-													<td class="text-nowrap align-middle">tientv</td>
+													<td class="text-nowrap align-middle">bk220001</td>
+													<td class="text-nowrap align-middle"><a href="admin/profile-patient.html">Nguyễn Minh Thành</a></td>
+													<td class="text-nowrap align-middle"><a href="admin/profile-doctor.html">Trần Vĩnh Tiến</a></td>
 													<td class="text-nowrap align-middle">16/06/2022</td>
+													<td class="text-nowrap align-middle">08:00</td>
+													<td class="text-nowrap align-middle">Em đang bị gặp vấn đề về tâm lý cần được giúp đỡ</td>
 													<td class="text-center align-middle">
 													<div class="btn-group align-top">
 														<button onclick ="document.location='admin/edit-blog.html'" class="btn btn-secondary badge" type="button">Sửa</button>
@@ -869,10 +873,12 @@
 													</td>
 													</tr>
 													<tr>
-													<td class="text-nowrap align-middle">ev220001</td>
-													<td class="text-nowrap align-middle"><a href="admin/eventdetail.html">Hậu quả trầm cảm sau sinh phần 1</a></td>
-													<td class="text-nowrap align-middle">tientv</td>
+													<td class="text-nowrap align-middle">bk220002</td>
+													<td class="text-nowrap align-middle"><a href="admin/blogdetail.html">Phạm Hoàng Quang Duy</a></td>
+													<td class="text-nowrap align-middle"><a href="admin/profile-doctor.html">Trần Vĩnh Tiến</a></td>
 													<td class="text-nowrap align-middle">16/06/2022</td>
+													<td class="text-nowrap align-middle">09:00</td>
+													<td class="text-nowrap align-middle">Em đang bị gặp vấn đề về tâm lý cần được giúp đỡ</td>
 													<td class="text-center align-middle">
 													<div class="btn-group align-top">
 														<button onclick ="document.location='admin/edit-blog.html'" class="btn btn-secondary badge" type="button">Sửa</button>
@@ -882,28 +888,28 @@
 													</tr>
 												</tbody>
 											</table>
-										</div>
-											<div class="d-flex justify-content-center">
-											<ul class="pagination mt-3 mb-0">
-												<li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
-												<li class="active page-item"><a href="#" class="page-link">1</a></li>
-												<li class="page-item"><a href="#" class="page-link">2</a></li>
-												<li class="page-item"><a href="#" class="page-link">3</a></li>
-												<li class="page-item"><a href="#" class="page-link">4</a></li>
-												<li class="page-item"><a href="#" class="page-link">5</a></li>
-												<li class="page-item"><a href="#" class="page-link">›</a></li>
-												<li class="page-item"><a href="#" class="page-link">»</a></li>
-											</ul>
+												</div>
+												<div class="d-flex justify-content-center">
+													<ul class="pagination mt-3 mb-0">
+														<li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+														<li class="active page-item"><a href="#" class="page-link">1</a></li>
+														<li class="page-item"><a href="#" class="page-link">2</a></li>
+														<li class="page-item"><a href="#" class="page-link">3</a></li>
+														<li class="page-item"><a href="#" class="page-link">4</a></li>
+														<li class="page-item"><a href="#" class="page-link">5</a></li>
+														<li class="page-item"><a href="#" class="page-link">›</a></li>
+														<li class="page-item"><a href="#" class="page-link">»</a></li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
                 <div class="col-12 col-lg-2 mb-3" style="font-size: 15px;">
                   <div class="card">
                     <div class="card-body">
                       <div class="text-center px-xl-3">
-                        <button onclick ="document.location='admin/create-event.html'" class="btn btn-success btn-block" type="button">Tạo bài viết</button>
+                        <button onclick ="document.location='admin/create-blog.html'" class="btn btn-success btn-block" type="button">Đặt lịch</button>
                       </div>
                       <hr class="my-3">
                       <div class="e-navlist e-navlist--active-bold">
@@ -923,8 +929,8 @@
                   </div>
                 </div>
               </div>
-			</div>
-      	</div>				
+						</div>
+      </div>				
 					<!--end::Container-->
 					<!--begin::Footer-->
 					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
