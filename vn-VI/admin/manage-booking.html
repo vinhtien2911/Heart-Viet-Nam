@@ -867,7 +867,7 @@
 													<td class="text-nowrap align-middle">Em đang bị gặp vấn đề về tâm lý cần được giúp đỡ</td>
 													<td class="text-center align-middle">
 													<div class="btn-group align-top">
-														<button onclick ="document.location='admin/edit-blog.html'" class="btn btn-secondary badge" type="button">Sửa</button>
+														<button data-bs-toggle="modal" data-bs-target="#kt_modal_edit_booking" class="btn btn-secondary badge" type="button">Sửa</button>
 														<button class="btn btn-secondary badge" type="button"><i class="fa fa-trash"></i></button>
 													</div>
 													</td>
@@ -881,7 +881,7 @@
 													<td class="text-nowrap align-middle">Em đang bị gặp vấn đề về tâm lý cần được giúp đỡ</td>
 													<td class="text-center align-middle">
 													<div class="btn-group align-top">
-														<button onclick ="document.location='admin/edit-blog.html'" class="btn btn-secondary badge" type="button">Sửa</button>
+														<button data-bs-toggle="modal" data-bs-target="#kt_modal_edit_booking" class="btn btn-secondary badge" type="button">Sửa</button>
 														<button class="btn btn-secondary badge" type="button"><i class="fa fa-trash"></i></button>
 													</div>
 													</td>
@@ -909,12 +909,12 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="text-center px-xl-3">
-                        <button onclick ="document.location='admin/create-blog.html'" class="btn btn-success btn-block" type="button">Đặt lịch</button>
+                        <button data-bs-toggle="modal"  data-bs-target="#kt_modal_new_booking" class="btn btn-success btn-block" type="button">Đặt lịch</button>
                       </div>
                       <hr class="my-3">
                       <div class="e-navlist e-navlist--active-bold">
                         <ul class="nav">
-                          <li class="nav-item active"><a href="" class="nav-link"><span>Tổng số bài viết</span>&nbsp;<small>:&nbsp;32</small></a></li>
+                          <li class="nav-item active"><a href="" class="nav-link"><span>Tổng số lịch hẹn</span>&nbsp;<small>:&nbsp;32</small></a></li>
                         </ul>
                       </div>
                       <hr class="my-3">
@@ -929,7 +929,7 @@
                   </div>
                 </div>
               </div>
-						</div>
+			</div>
       </div>				
 					<!--end::Container-->
 					<!--begin::Footer-->
@@ -2849,6 +2849,224 @@
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Create App-->
+		<!--begin::Modal - New booking-->
+		<div class="modal fade" id="kt_modal_new_booking" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+							<span class="svg-icon svg-icon-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+						<!--begin:Form-->
+						<form id="kt_modal_new_booking_form" class="form" action="#">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<!--begin::Title-->
+								<h1 class="mb-3">Tạo lịch hẹn</h1>
+								<!--end::Title-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span class="required">Chọn bác sĩ</span>
+									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Chọn bác sĩ mà bạn muốn chia sẻ"></i>
+								</label>
+								<!--end::Label-->
+								<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Team Member" name="target_assign">
+									<option selected="">Bs. Nguyễn Thiện Hoàng</option>
+									<option>Ths. Trần Xuân Lĩnh</option>
+									<option>Ths. Hồ Nguyễn Phú Bảo</option>
+								</select>
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="row g-9 mb-8">
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-bold mb-2">Ngày hẹn</label>
+									<!--begin::Input-->
+									<div class="position-relative d-flex align-items-center">
+										<!--begin::Datepicker-->
+										<input type="date" class="form-control form-control-solid" id="Date" placeholder="Ngày hẹn" value="">
+										<!--end::Datepicker-->
+									</div>
+									<!--end::Input-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-bold mb-2">Giờ hẹn</label>
+									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" name="">
+										<option selected="">08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+									</select>
+								</div>
+								<!--end::Col-->
+							</div>
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span class="required">Ghi chú </span>
+									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Cần có lưu ý gì cho bác sĩ không ?"></i>
+								</label>
+								<!--end::Label-->
+								<textarea type="text" class="form-control form-control-solid" style="height: 50px;" placeholder="Ghi chú" name="target_title"></textarea>
+							</div>
+							<!--end::Input group-->
+							<div class="text-center">
+								<button type="reset" id="kt_modal_new_booking_cancel" class="btn btn-light me-3">Huỷ</button>
+								<button type="submit" id="kt_modal_new_booking_submit" class="btn btn-primary">
+									<span class="indicator-label">Đặt lịch</span>
+									<span class="indicator-progress">Đang xử lí
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end:Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - New Booking-->
+		<!--begin::Modal - Edit booking-->
+		<div class="modal fade" id="kt_modal_edit_booking" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+							<span class="svg-icon svg-icon-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+						<!--begin:Form-->
+						<form id="kt_modal_edit_booking_form" class="form" action="#">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<!--begin::Title-->
+								<h1 class="mb-3">Chỉnh sửa lịch hẹn</h1>
+								<!--end::Title-->
+							</div>
+							<!--end::Heading-->
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span class="required">Chọn bác sĩ</span>
+									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Chọn bác sĩ mà bạn muốn chia sẻ"></i>
+								</label>
+								<!--end::Label-->
+								<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Team Member" name="target_assign">
+									<option selected="">Bs. Nguyễn Thiện Hoàng</option>
+									<option>Ths. Trần Xuân Lĩnh</option>
+									<option>Ths. Hồ Nguyễn Phú Bảo</option>
+								</select>
+							</div>
+							<!--end::Input group-->
+							<!--begin::Input group-->
+							<div class="row g-9 mb-8">
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-bold mb-2">Ngày hẹn</label>
+									<!--begin::Input-->
+									<div class="position-relative d-flex align-items-center">
+										<!--begin::Datepicker-->
+										<input type="date" class="form-control form-control-solid" id="Date" placeholder="Ngày hẹn" value="">
+										<!--end::Datepicker-->
+									</div>
+									<!--end::Input-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-md-6 fv-row">
+									<label class="required fs-6 fw-bold mb-2">Giờ hẹn</label>
+									<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" name="">
+										<option selected="">08:00</option>
+										<option>09:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+										<option>12:00</option>
+										<option>13:00</option>
+										<option>14:00</option>
+										<option>15:00</option>
+										<option>16:00</option>
+										<option>17:00</option>
+									</select>
+								</div>
+								<!--end::Col-->
+							</div>
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span class="required">Ghi chú </span>
+									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Cần có lưu ý gì cho bác sĩ không ?"></i>
+								</label>
+								<!--end::Label-->
+								<textarea type="text" class="form-control form-control-solid" style="height: 50px;" placeholder="Ghi chú" name="target_title"></textarea>
+							</div>
+							<!--end::Input group-->
+							<div class="text-center">
+								<button type="reset" id="kt_modal_edit_booking_cancel" class="btn btn-light me-3">Huỷ</button>
+								<button type="submit" id="kt_modal_edit_booking_submit" class="btn btn-primary">
+									<span class="indicator-label">Đặt lịch</span>
+									<span class="indicator-progress">Đang xử lí
+									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end:Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal -Booking-->
 		<!--begin::Modal - New Target-->
 		<div class="modal fade" id="kt_modal_new_target" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
