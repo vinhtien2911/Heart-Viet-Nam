@@ -78,16 +78,28 @@
 												</span>
 											</div>											
 											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-												<span onclick="document.location='admin/bloglist.html'" class="menu-link py-3">
-													<span class="menu-title">Bài viết</href=></span>
+												<span class="menu-link py-3">
+													<span class="menu-title">Diễn dàn</href=></span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
-											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-												<span onclick="document.location='admin/eventlist.html'" class="menu-link py-3">
-													<span class="menu-title">Sự kiện</href=></span>
-													<span class="menu-arrow d-lg-none"></span>
-												</span>
+												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/bloglist.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Bài viết</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/eventlist.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Sự kiện</span>
+														</a>
+													</div>
+												</div>
 											</div>
 											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
@@ -113,66 +125,152 @@
 													</div>
 												</div>
 											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
-													<span class="menu-title">Quản lý bài viết</span>
+													<span class="menu-title">Liên hệ</span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
 												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
 													<div class="menu-item">
-														<a class="menu-link active py-3" href="create-blog.html">
+														<a class="menu-link py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_contact">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
-															<span class="menu-title">Tạo bài viết</span>
+															<span class="menu-title">Đặt câu hỏi</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_evaluation">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Đánh giá</span>
 														</a>
 													</div>
 												</div>
 											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
-													<span class="menu-title">Quản lý bệnh nhân</span>
+													<span class="menu-title">Quản lý hồ sơ</span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
 												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
 													<div class="menu-item">
-														<a class="menu-link py-3" href="admin/about.html">
+														<a class="menu-link py-3" href="admin/create-profile-patient.html">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
 															<span class="menu-title">Tạo hồ sơ bệnh nhân</span>
 														</a>
 													</div>
-												</div>
-											</div>
-											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
-												<span class="menu-link py-3">
-													<span class="menu-title">Quản lý nhân viên</span>
-													<span class="menu-arrow d-lg-none"></span>
-												</span>
-												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
 													<div class="menu-item">
-														<a class="menu-link py-3" href="admin/about.html">
+														<a class="menu-link py-3" href="admin/manage-patient.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Quản lý hồ sơ bệnh nhân</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/create-profile-doctor.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Tạo hồ sơ bác sĩ</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link active py-3" href="admin/manage-doctor.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Quản lý hồ sơ bác sĩ</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/create-profile-staff.html">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
 															<span class="menu-title">Tạo hồ sơ nhân viên</span>
 														</a>
 													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/manage-staff.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Quản lý hồ sơ nhân viên</span>
+														</a>
+													</div>
 												</div>
 											</div>
 											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
 												<span class="menu-link py-3">
-													<span class="menu-title">Quản lý tài khoản</span>
+													<span class="menu-title">Quản lý diễn đàn</span>
 													<span class="menu-arrow d-lg-none"></span>
 												</span>
 												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
 													<div class="menu-item">
-														<a class="menu-link py-3" href="admin/about.html">
+														<a class="menu-link py-3" href="admin/create-blog.html">
 															<span class="menu-bullet">
 																<span class="bullet bullet-dot"></span>
 															</span>
-															<span class="menu-title">Tạo tài khoản</span>
+															<span class="menu-title">Tạo bài viết</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/manage-blog.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Quản lý bài viết</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/create-event.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Tạo sự kiện</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/manage-event.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Quản lý sự kiện</span>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
+												<span onclick="document.location='admin/manage-booking.html'" class="menu-link py-3">
+													<span class="menu-title">Quản lý lịch hẹn</span>
+													<span class="menu-arrow d-lg-none"></span>
+												</span>
+											</div>
+											<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
+												<span class="menu-link py-3">
+													<span class="menu-title">Quản lý phản hồi</span>
+													<span class="menu-arrow d-lg-none"></span>
+												</span>
+												<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/manage-question.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Câu hỏi</span>
+														</a>
+													</div>
+													<div class="menu-item">
+														<a class="menu-link py-3" href="admin/manage-evaluation.html">
+															<span class="menu-bullet">
+																<span class="bullet bullet-dot"></span>
+															</span>
+															<span class="menu-title">Đánh giá</span>
 														</a>
 													</div>
 												</div>
